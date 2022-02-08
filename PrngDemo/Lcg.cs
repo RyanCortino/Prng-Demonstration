@@ -2,6 +2,18 @@
 
 namespace agRandom
 {
+    /// <summary>
+    /// Linear Congruential Generator (LCG)
+    /// <variables>
+    ///     Modulus: long m
+    ///         The maximum period of the pseudo-random number sequence.
+    ///             Thus we choose m to be close to the maximum integer number
+    ///             representable in a single register.
+    ///     Multiplier: long a
+    ///     Increment: long c
+    ///         the parameters a and c should be relatively prime to m. 
+    /// </variables>
+    /// </summary>
     public class Lcg : BasePrng
     {
         private const long m = 4294967296;  // 2^32
@@ -13,7 +25,7 @@ namespace agRandom
 
         public override long Next()
         {
-            _last = ((a * _last) + c) % m;
+            _last = (a * _last + c) % m;
             return _last;
         }
 
@@ -30,7 +42,7 @@ namespace agRandom
             for (int j = 0; j < resultsPerLine; j++)
             {
                 returnValue += Next(maxValue);
-                if (j < resultsPerLine--)
+                if (j < resultsPerLine-1)
                     returnValue += ", ";
             }
 
