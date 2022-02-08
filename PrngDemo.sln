@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrngDemo", "PrngDemo\PrngDemo.csproj", "{EC0F39CD-C7C9-4DA6-B0CE-D1CF1D9621AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Console\Console.csproj", "{7EFE5D73-E1C2-4E3E-BBD3-42AB7AFA17B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC0F39CD-C7C9-4DA6-B0CE-D1CF1D9621AD} = {EC0F39CD-C7C9-4DA6-B0CE-D1CF1D9621AD}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC0F39CD-C7C9-4DA6-B0CE-D1CF1D9621AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0F39CD-C7C9-4DA6-B0CE-D1CF1D9621AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0F39CD-C7C9-4DA6-B0CE-D1CF1D9621AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0F39CD-C7C9-4DA6-B0CE-D1CF1D9621AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFE5D73-E1C2-4E3E-BBD3-42AB7AFA17B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFE5D73-E1C2-4E3E-BBD3-42AB7AFA17B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFE5D73-E1C2-4E3E-BBD3-42AB7AFA17B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFE5D73-E1C2-4E3E-BBD3-42AB7AFA17B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0E3623E-A6C0-4CE0-AE4D-6E76A1BA798B}
+	EndGlobalSection
+EndGlobal
