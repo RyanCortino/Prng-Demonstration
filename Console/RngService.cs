@@ -16,5 +16,11 @@ public class RngService : BaseDemoService
     public override void Run()
     {
         _log.LogInformation("RngService Running: Seed: {0}", _rng.GetSeed());
+
+        // Let's run 10 passes for the sake of demonstration
+        for (int i = 0; i < 10; i++)
+        {
+            _log.LogInformation("Pass {0}, result= {1}", i, _rng.DemoResults(maxValue: 10, resultsPerLine: 10));
+        }
     }
 }
